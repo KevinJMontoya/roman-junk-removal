@@ -1,0 +1,50 @@
+/* Footer Styles */
+
+.site-footer {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-inner > div:first-child {
+  font-size: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+}
+
+.social a:hover {
+  background: var(--accent);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+.social .icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+

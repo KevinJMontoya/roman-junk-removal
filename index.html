@@ -4,177 +4,341 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Roman Junk Removal — Junk Removal Brantford</title>
-  <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Same-day junk removal in Brantford. Free on-site estimates, recycling & donation, fully insured teams." />
+  
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="/images/logo.png" alt="Roman Junk Removal logo" class="logo" />
-        <div class="brand-text">
-          <strong>Roman Junk Removal</strong>
-          <span class="tagline">Same-day junk removal</span>
-        </div>
-      </div>
+  <header class="site-header" role="banner">
+    <div class="header-bg"></div>
+    <div class="header-overlay"></div>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="#services">Services</a>
-        <a href="#what-we-remove">What We Remove</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+    <div class="container header-inner">
+        <img src="assets/images/logo-side.png" alt="Roman Junk Removal logo" class="logo" width="140" height="auto"/>
+
+      <nav class="header-nav" role="navigation" aria-label="Page navigation">
+          <a href="#what-we-remove" class="nav-link"><span class="nav-label">What we remove?</span>
+          </a>          
+          <a href="#services" class="nav-link"><span class="nav-label">Services</span>
+          </a>
+          <a href="#reviews" class="nav-link"><span class="nav-label">Reviews</span>
+          </a>
+          <a href="#contact" class="nav-link"><span class="nav-label">Contact</span>
+          </a>
       </nav>
 
       <div class="header-actions">
-        <a href="tel:+15199321444" class="phone">(289) 994 4588</a>
-        <button class="btn primary" id="bookBtn">Book Now</button>
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+        <a href="tel:+15199321444" class="phone" aria-label="Call us at 289-994-4588">(289) 994 4588</a>
+        <button class="btn primary" id="bookBtn" aria-label="Book an appointment">Book Now</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-bg parallax-bg"></div>
+
         <div class="hero-text">
-          <h1>Junk Removal — Brantford</h1>
+          <h1 class="hero-title">Proudly Serving Brantford & Hamilton Area</h1>
           <p class="sub">Free estimates • Calls answered quickly • Same-day service available</p>
           <div class="hero-ctas">
             <button class="btn primary" id="bookBtn2">View Price & Schedule</button>
             <a href="#what-we-remove" class="btn outline">What We Remove</a>
           </div>
-        </div>
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="/images/Junk1.jpg" alt="">
-            <img src="/images/junk2.jpg" alt="">
-            <img src="/images/junk3.jpg" alt="">
+        </div> 
+       
+        <div class="carousel-container" aria-label="Image carousel"> 
+          <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+          <button class="carousel-btn next" aria-label="Next image">›</button> 
+          <div class="hero-overlay"></div>
+          <div class="carousel-slide" role="region" aria-label="Service images">
+            <img src="assets/images/junk1.jpg" alt="Junk removal service example 1" loading="lazy" />
+            <img src="assets/images/junk2.jpg" alt="Junk removal service example 2" loading="lazy" />
+            <img src="assets/images/junk3.jpg" alt="Junk removal service example 3" loading="lazy" />
+            <img src="assets/images/junk4.jpg" alt="Junk removal service example 4" loading="lazy" />
+            <img src="assets/images/junk5.jpg" alt="Junk removal service example 5" loading="lazy" />
+            <img src="assets/images/junk6.jpg" alt="Junk removal service example 6" loading="lazy" />
           </div>
-          <button class="carousel-btn prev">‹</button>
-          <button class="carousel-btn next">›</button>
         </div>
-      </div>
     </section>
 
     <section id="how-it-works" class="section container">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><strong>Book</strong> — Call or book online for a free estimate.</li>
-        <li><strong>We arrive</strong> — Team calls 30 minutes prior and gives an on-site estimate.</li>
-        <li><strong>We remove</strong> — We lift, load, and haul your items; we recycle and donate when possible.</li>
-      </ol>
+      <div class="section-header">
+        <h2>The Removal Process</h2>
+        <p class="section-subtitle">Simple, fast, and reliable</p>
+      </div>
+      <div class="steps-wrapper">
+        <ol class="steps">
+          <li class="step-card">
+            <div class="step-icon">
+              <img src="assets/images/book.jpg" alt="Book appointment" loading="lazy" />
+            </div>
+            <strong>Book</strong>
+            <p>Call or book online for a free estimate.</p>
+          </li>
+          <li class="step-card">
+            <div class="step-icon">
+              <img src="assets/images/meet.png" alt="Team arrives" loading="lazy" />
+            </div>
+            <strong>We arrive</strong>
+            <p>Team calls 30 minutes prior and gives an on-site estimate.</p>
+          </li>
+          <li class="step-card">
+            <div class="step-icon">
+              <img src="/assets/images/remove.png" alt="We remove" loading="lazy" />
+            </div>
+            <strong>We remove</strong>
+            <p>We lift, load, and haul your items; we recycle and donate when possible.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section id="what-we-remove" class="section container">
-      <h2>What we remove</h2>
-      <p>We remove most residential and commercial items — appliances, furniture, renovation debris, electronics, mattresses, and more.</p>
-
-      <ul class="items-grid">
-        <li>Refrigerators & Freezers</li>
-        <li>Furniture</li>
-        <li>Mattresses & Box Springs</li>
-        <li>Electronics & TVs</li>
-        <li>Renovation debris (tiles, lumber)</li>
-        <li>Hot tubs, sheds, and large items</li>
-        <li>Yard debris & brush</li>
-        <li>Scrap metal & e-waste</li>
-      </ul>
-
-      <p class="small-note">Don’t see your item? Contact us — we likely can take it.</p>
+    <section id="what-we-remove" class="section image-section">
+      <div class="section-bg parallax-bg"></div>
+      <div class="section-overlay"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2>What We Remove</h2>
+          <p class="section-subtitle">We remove most residential and commercial items — appliances, furniture, renovation debris, electronics, mattresses, and more.</p>
+        </div>
+        <div class="items-gallery">
+          <div class="item-card">
+            <img src="./assets/images/fridge.jpg" alt="Refrigerators & Freezers" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Refrigerators & Freezers</h3>
+            </div>
+          </div>
+          <div class="item-card">
+            <img src="/assets/images/couch.jpg" alt="Furniture" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Furniture</h3>
+            </div>
+          </div>
+          <div class="item-card">
+            <img src="/assets/images/mattress.jpg" alt="Mattresses & Box Springs" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Mattresses & Box Springs</h3>
+            </div>
+          </div>
+          <div class="item-card">
+            <img src="/assets/images/electronics.jpg" alt="Electronics & TVs" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Electronics & TVs</h3>
+            </div>
+          </div>
+          <div class="item-card">
+            <img src="/assets/images/reno.jpg" alt="Renovation debris" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Renovation Debris</h3>
+            </div>
+          </div>
+          <div class="item-card">
+            <img src="/assets/images/large.jpg" alt="Large items" loading="lazy" />
+            <div class="item-overlay">
+              <h3>Hot Tubs & Large Items</h3>
+            </div>
+          </div>
+        </div>
+        <div class="items-grid">
+          <li>Yard debris & brush</li>
+          <li>Scrap metal & e-waste</li>
+          <li>Construction materials</li>
+          <li>Old appliances</li>
+        </div>
+        <p class="small-note">Don't see your item? <a href="#contact">Contact us</a> — we likely can take it.</p>
+      </div>
     </section>
 
     <section id="services" class="section alt container">
-    <h2>Our Services</h2>
-    <div class="service-item">
-      <img src="images/residential-icon-cl.png" alt="Residential Junk Removal">
-      <h3>Residential Junk Removal</h3>
-      <p>We remove all types of household junk, from furniture to appliances.</p>
-    </div>
-    <div class="service-item">
-      <img src="images/commercial-icon-cl.png" alt="Commercial Junk Removal">
-      <h3>Commercial Junk Removal</h3>
-      <p>We provide junk removal for offices, retail, and industrial spaces.</p>
-    </div>
-    <div class="service-item">
-      <img src="images/recycling-icon-cl.png" alt="Recycling">
-      <h3>Eco-Friendly Recycling</h3>
-      <p>We ensure that your unwanted items are recycled in an environmentally safe manner.</p>
-    </div>
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Professional junk removal solutions for every need</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-image">
+            <img src="/assets/images/res-junk.jpg" alt="Residential Junk Removal" loading="lazy" />
+          </div>
+          <div class="service-content">
+            <img src="assets/images/residential-icon-cl.png" alt="Residential icon" class="service-icon" width="80" height="auto" loading="lazy" />
+            <h3>Residential Junk Removal</h3>
+            <p>We remove all types of household junk, from furniture to appliances. Fast, reliable service for your home.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-image">
+            <img src="assets/images/com-junk.jpg" alt="Commercial Junk Removal" loading="lazy" />
+          </div>
+          <div class="service-content">
+            <img src="assets/images/commercial-icon-cl.png" alt="Commercial icon" class="service-icon" width="80" height="auto" loading="lazy" />
+            <h3>Commercial Junk Removal</h3>
+            <p>We provide junk removal for offices, retail, and industrial spaces. Keep your business clean and organized.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-image">
+            <img src="/assets/images/recycle-junk.png" alt="Eco-Friendly Recycling" loading="lazy" />
+          </div>
+          <div class="service-content">
+            <img src="assets/images/recycling-icon-cl.png" alt="Recycling icon" class="service-icon" width="80" height="auto" loading="lazy" />
+            <h3>Eco-Friendly Recycling</h3>
+            <p>We ensure that your unwanted items are recycled in an environmentally safe manner. Responsible disposal guaranteed.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="reviews" class="section container">
-      <h2>Customer reviews</h2>
+      <div class="section-header">
+        <h2>Customer Reviews</h2>
+        <p class="section-subtitle">What our customers say about us</p>
+      </div>
       <div class="reviews">
-        <blockquote>
+        <blockquote class="review-card">
+          <div class="review-avatar">
+            <img src="/assets/images/customer.png" alt="Customer A" loading="lazy" />
+          </div>
           <p>Very professional and efficient. Highly recommend.</p>
           <cite>— Customer A.</cite>
         </blockquote>
-        <blockquote>
+        <blockquote class="review-card">
+          <div class="review-avatar">
+            <img src="/assets/images/customer.png" alt="Customer B" loading="lazy" />
+          </div>
           <p>Came same day and took care of everything — excellent service.</p>
           <cite>— Customer B.</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-avatar">
+            <img src="/assets/images/customer.png" alt="Customer C" loading="lazy" />
+          </div>
+          <p>Best junk removal service in Brantford! Fast, friendly, and affordable.</p>
+          <cite>— Customer C.</cite>
         </blockquote>
       </div>
     </section>
 
-    <section id="hours" class="section container">
-      <h2>Hours</h2>
-      <p>Mon–Fri: 7am–9pm • Sat–Sun: 7am–8pm • Book online 24/7</p>
+    <section id="hours" class="section hours-section">
+      <div class="hours-bg parallax-bg"></div>
+      <div class="container">
+        <div class="hours-card">
+          <h2>Hours</h2>
+          <div class="hours-content">
+            <div class="hours-item">
+              <strong>Mon–Fri</strong>
+              <span>7am–9pm</span>
+            </div>
+            <div class="hours-item">
+              <strong>Sat–Sun</strong>
+              <span>7am–8pm</span>
+            </div>
+            <div class="hours-item">
+              <strong>Online Booking</strong>
+              <span>24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section container">
-      <h2>Contact & Booking</h2>
-      <p>Phone: <a href="tel:+15199321444">519-932-1444</a> — Email: <a href="mailto:info@Roman Junk Removal.example">info@Roman Junk Removal.example</a></p>
+      <div class="section-header">
+        <h2>Contact & Booking</h2>
+        <p class="section-subtitle">Get your free estimate today</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-card">
+            <img src="assets/images/clutter.jpg" alt="Contact us" loading="lazy" />
+            <div class="contact-details">
+              <p class="contact-container">
+                <strong>Phone:</strong> <a href="tel:+15199321444">519-932-1444</a>
+              </p>
+              <p class="contact-container">
+                <strong>Email:</strong> <a href="mailto:info@romanjunkremoval.example">info@romanjunkremoval.example</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="contact-name">
+            Name
+            <input type="text" id="contact-name" name="name" required autocomplete="name" />
+          </label>
+          <label for="contact-info">
+            Phone or Email
+            <input type="text" id="contact-info" name="contact" required autocomplete="tel email" />
+          </label>
+          <label for="contact-message">
+            Message / Items to remove
+            <textarea id="contact-message" name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Request Free Estimate</button>
+        </form>
+      </div>
+    </section>
 
-      <form id="contactForm" class="contact-form" onsubmit="submitContact(event)">
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Phone or Email
-          <input type="text" name="contact" required />
-        </label>
-        <label>
-          Message / Items to remove
-          <textarea name="message" rows="3" required></textarea>
-        </label>
-        <button class="btn primary" type="submit">Request Free Estimate</button>
-      </form>
+    <section id="newsletter" class="newsletter-section">
+      <div class="newsletter-bg parallax-bg"></div>
+      <div class="container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up to date with tips, promotions, and updates about junk removal services.</p>
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message" style="display: none;" role="alert" aria-live="polite">
+          <p>Thank you for subscribing! Check your inbox for updates.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <div>
         © <span id="year"></span> Roman Junk Removal — Licensed & Insured
       </div>
-      <div class="social">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
+      <div class="social" aria-label="Social media links">
+        <a href="#" aria-label="Visit our Facebook page" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="assets/images/facebook.png" alt="" width="24" height="24" />
+        </a>
+        <a href="#" aria-label="Visit our Instagram page" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="assets/images/instagram.png" alt="" width="24" height="24" />
+        </a>
       </div>
     </div>
   </footer>
 
-  <div id="bookingModal" class="modal" aria-hidden="true">
+  <!-- Booking modal -->
+  <div id="bookingModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-modal="true">
     <div class="modal-content">
-      <button class="modal-close" id="modalClose">×</button>
-      <h3>Book an Appointment</h3>
-      <form id="bookingForm" onsubmit="submitBooking(event)">
-        <label>
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <h3 id="modal-title">Book an Appointment</h3>
+      <form id="bookingForm" novalidate>
+        <label for="booking-name">
           Full name
-          <input required name="fullName" />
+          <input type="text" id="booking-name" name="fullName" required autocomplete="name" />
         </label>
-        <label>
+        <label for="booking-phone">
           Phone
-          <input required name="phone" />
+          <input type="tel" id="booking-phone" name="phone" required autocomplete="tel" />
         </label>
-        <label>
+        <label for="booking-notes">
           Address / Notes
-          <textarea name="notes" rows="3" required></textarea>
+          <textarea id="booking-notes" name="notes" rows="4" required></textarea>
         </label>
         <button class="btn primary" type="submit">Send Request</button>
       </form>
     </div>
   </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>

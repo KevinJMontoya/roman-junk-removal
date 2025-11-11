@@ -1,0 +1,120 @@
+/* Header Styles */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: var(--transition-fast);
+  overflow: hidden;
+  padding: 0.8rem;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(135deg, rgba(192, 44, 25, 0.95) 0%, rgba(200, 112, 4, 0.95) 100%);
+}
+
+.header-bg {
+  background-image: url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=1920&h=200&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+  opacity: 0.3;
+  animation: headerSlide 20s ease-in-out infinite;
+  background-color: rgb(0, 38, 143);
+}
+
+@keyframes headerSlide {
+  0%, 100% { transform: scale(1) translateX(0); }
+  50% { transform: scale(1.1) translateX(-2%); }
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(192, 44, 25, 0.85) 0%, rgba(200, 112, 4, 0.85) 100%);
+  z-index: -1;
+}
+
+.site-header.scrolled {
+  box-shadow: var(--shadow-lg);
+}
+
+.site-header.scrolled .header-bg {
+  opacity: 0.2;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 145px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  transition: var(--transition-fast);
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.phone:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+}
+
+.header-nav {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-link{
+  gap: 0.5rem;
+}
+
+.nav-link:hover {
+  transform: scale(1.08);
+  text-shadow: 0 0 10px rgb(255, 203, 203);
+  
+  .nav-label {
+    color: var(--accent);
+  };
+}
+
+.nav-label {
+  font-family: "tommy";
+  font-size: 18px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+

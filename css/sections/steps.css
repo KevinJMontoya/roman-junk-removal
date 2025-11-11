@@ -1,0 +1,80 @@
+/* STEPS */
+.steps-wrapper {
+  margin-top: 3rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.step-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.step-card:hover::before {
+  transform: scaleX(1);
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-2);
+}
+
+.step-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.step-card strong {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.step-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
