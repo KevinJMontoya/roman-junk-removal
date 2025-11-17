@@ -13,18 +13,17 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 0;
 }
 
 .carousel-slide {
   display: flex;
   width: 100%;
-  height: 100%; /* match container height */
+  height: 100%; 
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
-  flex: 0 0 100%; /* force each image to take full slide width */
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35,7 +34,7 @@
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;
+  z-index: 900;
   text-align: center;
   color: white;
   max-width: 800px;
@@ -62,15 +61,14 @@
 }
 
 .hero-overlay {
-    position: absolute;       
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 2;               
+  position: absolute;       
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 100;               
 }
-
 
 /* CAROUSEL NAV BUTTONS */
 .carousel-btn {

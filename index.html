@@ -11,56 +11,62 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-  
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <img src="assets/images/logo-side.png" alt="Roman Junk Removal logo" class="logo" width="140" height="auto"/>
-
       <nav class="header-nav" role="navigation" aria-label="Page navigation">
-          <a href="#what-we-remove" class="nav-link"><span class="nav-label">What we remove?</span>
-          </a>          
-          <a href="#services" class="nav-link"><span class="nav-label">Services</span>
-          </a>
-          <a href="#reviews" class="nav-link"><span class="nav-label">Reviews</span>
-          </a>
-          <a href="#contact" class="nav-link"><span class="nav-label">Contact</span>
-          </a>
+        <a href="#what-we-remove" class="nav-link"><span class="nav-label">What we remove?</span></a>          
+        <a href="#services" class="nav-link"><span class="nav-label">Services</span></a>
+        <a href="#contact" class="nav-link"><span class="nav-label">Contact</span></a>
       </nav>
-
+      
       <div class="header-actions">
         <a href="tel:+15199321444" class="phone" aria-label="Call us at 289-994-4588">(289) 994 4588</a>
-        <button class="btn primary" id="bookBtn" aria-label="Book an appointment">Book Now</button>
+        <button class="btn primary" id="bookBtn" aria-label="Get a free quote">Get a Quote</button>
       </div>
     </div>
   </header>
-
   <main>
+    <nav class="floating-nav" aria-label="Floating Navigation">
+      <a href="#what-we-remove" class="nav-link">
+        <span class="nav-icon">🗑️</span>
+        <span class="nav-label">Remove</span>
+      </a>
+      <a href="#services" class="nav-link">
+        <span class="nav-icon">🛠️</span>
+        <span class="nav-label">Services</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="nav-icon">📞</span>
+        <span class="nav-label">Contact</span>
+      </a>
+    </nav>
     <section class="hero" aria-label="Hero section">
-      <div class="hero-bg parallax-bg"></div>
-
-        <div class="hero-text">
-          <h1 class="hero-title">Proudly Serving Brantford & Hamilton Area</h1>
-          <p class="sub">Free estimates • Calls answered quickly • Same-day service available</p>
-          <div class="hero-ctas">
-            <button class="btn primary" id="bookBtn2">View Price & Schedule</button>
-            <a href="#what-we-remove" class="btn outline">What We Remove</a>
-          </div>
-        </div> 
-       
-        <div class="carousel-container" aria-label="Image carousel"> 
-          <button class="carousel-btn prev" aria-label="Previous image">‹</button>
-          <button class="carousel-btn next" aria-label="Next image">›</button> 
-          <div class="hero-overlay"></div>
-          <div class="carousel-slide" role="region" aria-label="Service images">
-            <img src="assets/images/junk1.jpg" alt="Junk removal service example 1" loading="lazy" />
-            <img src="assets/images/junk2.jpg" alt="Junk removal service example 2" loading="lazy" />
-            <img src="assets/images/junk3.jpg" alt="Junk removal service example 3" loading="lazy" />
-            <img src="assets/images/junk4.jpg" alt="Junk removal service example 4" loading="lazy" />
-            <img src="assets/images/junk5.jpg" alt="Junk removal service example 5" loading="lazy" />
-            <img src="assets/images/junk6.jpg" alt="Junk removal service example 6" loading="lazy" />
-          </div>
+      <div class="hero-bg parallax-bg"></div>        
+      <div class="hero-text">
+        <h1 class="hero-title">Proudly Serving Brantford & Hamilton Area</h1>
+        <p class="sub">Free estimates • Calls answered quickly • Same-day service available</p>
+        <div class="hero-ctas">
+          <button class="btn primary" id="bookBtn2">Have Some Questions?</button>
+          <a href="#what-we-remove" class="btn outline">What We Remove</a>
         </div>
+      </div> 
+       
+      <div class="carousel-container" aria-label="Image carousel"> 
+        <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+        <button class="carousel-btn next" aria-label="Next image">›</button> 
+        <div class="hero-overlay"></div>
+        <div class="carousel-slide" role="region" aria-label="Service images">
+          <img src="assets/images/junk1.jpg" alt="Junk removal service example 1" loading="lazy" />
+          <img src="assets/images/junk2.jpg" alt="Junk removal service example 2" loading="lazy" />
+          <img src="assets/images/junk3.jpg" alt="Junk removal service example 3" loading="lazy" />
+          <img src="assets/images/junk4.jpg" alt="Junk removal service example 4" loading="lazy" />
+          <img src="assets/images/junk5.jpg" alt="Junk removal service example 5" loading="lazy" />
+          <img src="assets/images/junk6.jpg" alt="Junk removal service example 6" loading="lazy" />
+        </div>
+      </div>
     </section>
 
     <section id="how-it-works" class="section container">
@@ -190,36 +196,6 @@
       </div>
     </section>
 
-    <section id="reviews" class="section container">
-      <div class="section-header">
-        <h2>Customer Reviews</h2>
-        <p class="section-subtitle">What our customers say about us</p>
-      </div>
-      <div class="reviews">
-        <blockquote class="review-card">
-          <div class="review-avatar">
-            <img src="/assets/images/customer.png" alt="Customer A" loading="lazy" />
-          </div>
-          <p>Very professional and efficient. Highly recommend.</p>
-          <cite>— Customer A.</cite>
-        </blockquote>
-        <blockquote class="review-card">
-          <div class="review-avatar">
-            <img src="/assets/images/customer.png" alt="Customer B" loading="lazy" />
-          </div>
-          <p>Came same day and took care of everything — excellent service.</p>
-          <cite>— Customer B.</cite>
-        </blockquote>
-        <blockquote class="review-card">
-          <div class="review-avatar">
-            <img src="/assets/images/customer.png" alt="Customer C" loading="lazy" />
-          </div>
-          <p>Best junk removal service in Brantford! Fast, friendly, and affordable.</p>
-          <cite>— Customer C.</cite>
-        </blockquote>
-      </div>
-    </section>
-
     <section id="hours" class="section hours-section">
       <div class="hours-bg parallax-bg"></div>
       <div class="container">
@@ -254,10 +230,10 @@
             <img src="assets/images/clutter.jpg" alt="Contact us" loading="lazy" />
             <div class="contact-details">
               <p class="contact-container">
-                <strong>Phone:</strong> <a href="tel:+15199321444">519-932-1444</a>
+                <strong>Phone:</strong> <a href="tel:+15199321444">(289)-994-4588</a>
               </p>
               <p class="contact-container">
-                <strong>Email:</strong> <a href="mailto:info@romanjunkremoval.example">info@romanjunkremoval.example</a>
+                <strong>Email:</strong> <a href="mailto:info@romanjunkremoval.example">romanjremoval@gmail.com</a>
               </p>
             </div>
           </div>
@@ -313,11 +289,12 @@
     </div>
   </footer>
 
+
   <!-- Booking modal -->
   <div id="bookingModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-modal="true">
     <div class="modal-content">
       <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
-      <h3 id="modal-title">Book an Appointment</h3>
+      <h3 id="modal-title">Let Us Know and We'll Give You a Quote</h3>
       <form id="bookingForm" novalidate>
         <label for="booking-name">
           Full name
@@ -328,7 +305,7 @@
           <input type="tel" id="booking-phone" name="phone" required autocomplete="tel" />
         </label>
         <label for="booking-notes">
-          Address / Notes
+          Questions / Address
           <textarea id="booking-notes" name="notes" rows="4" required></textarea>
         </label>
         <button class="btn primary" type="submit">Send Request</button>

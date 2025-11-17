@@ -1,12 +1,10 @@
-// Floating Navigation
-
+// Floating Navigation + Dropdown
 export function initNavigation() {
   const floatingNav = document.querySelector('.floating-nav');
   if (!floatingNav) return;
 
   const navLinks = floatingNav.querySelectorAll('a');
-  
-  // Add active state to current section
+
   const updateActiveNav = () => {
     const sections = document.querySelectorAll('section[id]');
     let currentSection = '';
@@ -15,7 +13,7 @@ export function initNavigation() {
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
-      
+
       if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         currentSection = section.getAttribute('id');
       }
@@ -31,9 +29,9 @@ export function initNavigation() {
   };
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
-  updateActiveNav(); // Initial check
+  updateActiveNav(); 
 
-  // Smooth scroll for nav links
+
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
@@ -53,5 +51,4 @@ export function initNavigation() {
       }
     });
   });
-}
-
+  }

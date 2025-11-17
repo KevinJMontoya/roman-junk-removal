@@ -1,9 +1,9 @@
+@import url('./css/navigation.css');
 @import url('./css/sections.css');
 @import url('./css/components.css');
 @import url('./css/footer.css');
 @import url('/css/header.css');
 @import url('./css/layout.css');
-@import url('./css/navigation.css');
 @import url('./css/responsive.css');
 @import url('./css/utilities.css');
 
@@ -95,4 +95,5 @@ h3 {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
+
 
